@@ -9,5 +9,5 @@ services:
           - node.hostname == panik3
     ports:      
       - target: 80
-        published: 9090
+        published: 7070
         mode: host
