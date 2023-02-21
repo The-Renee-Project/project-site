@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 
 services:
   website:
-    build: "."
+    image: ghcr.io/the-renee-project/project-site
     ports:
-      - 8089:80
+      - 9090:80
     restart: always

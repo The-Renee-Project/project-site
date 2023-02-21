@@ -30,4 +30,4 @@ jobs:
         context: .
         push: true
         file: ./Dockerfile
-        tags: ghcr.io/The-Renee-Project/project-site:latest
+        tags: ghcr.io/the-renee-project/project-site:latest
