@@ -3,5 +3,7 @@ version: "3"
 services:
   website:
     image: ghcr.io/the-renee-project/project-site
-    ports:
-      - 9090:80
+    ports:      
+      - target: 80
+        published: 9090
+        mode: host
