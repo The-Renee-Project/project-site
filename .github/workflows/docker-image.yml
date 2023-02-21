@@ -29,4 +29,4 @@ jobs:
         push: true
         platforms: linux/arm64/v8
         file: ./Dockerfile
-        tags: ghcr.io/the-renee-project/project-site:${{ date +%s }}
+        tags: ghcr.io/the-renee-project/project-site:${{ github.run_number }}
