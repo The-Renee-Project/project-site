@@ -5,4 +5,3 @@ services:
     image: ghcr.io/the-renee-project/project-site
     ports:
       - 9090:80
-    restart: always
