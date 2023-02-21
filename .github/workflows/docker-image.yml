@@ -11,8 +11,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      DOCKER_TARGET_PLATFORM: linux/arm64/v8
 
     steps:
     - uses: actions/checkout@v3
@@ -25,9 +23,10 @@ jobs:
         password: ${{ github.token }}
         
     - name: Build Docker Container
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v4
       with:
         context: .
         push: true
+        platforms: linux/arm64/v8
         file: ./Dockerfile
-        tags: ghcr.io/the-renee-project/project-site:$(date +%s)
+        tags: ghcr.io/the-renee-project/project-site:${{ date +%s }}
